@@ -6,12 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CryptoMLM</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
     <section class="header">
         <nav>
             <a href="index.html"><img src="images/logo.png" width= "50" height="50" alt=""></a>
-            <div class="nav-links">
+            <div class="nav-links" id="nav-links">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="">HOME</a></li>
                     <li><a href="">ABOUT US</a></li>
@@ -21,8 +25,59 @@
                     <li><a href="">CONTACT</a></li>
                 </ul>
             </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
+    <div class="text-box">
+         <h1>Best Crypto Firm</h1>
+         <p>Let's know more about it later. <br>Currently we will focus on this particular topic</p>
+         <a href="" class="hero-btn">Visit Us To Know More</a>
+    </div>
 
     </section>
+    <!------------------------------------content----------------->
+    <section class="content">
+        <h1>Services We Offer</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        <div class="row">
+            <div class="column">
+                <h3>Intermediate</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+            <div class="column">
+                <h3>Degree</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+            <div class="column">
+                <h3>Post Graduation</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!---------------------------newClass--------------------------------->
+
+    <section class="newClass">
+        <h1>
+            Our Global Campus
+        </h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+    </section>
+
+
+
+
+
+
+    <!--------------------JavaScript for Toggle Menu----------------------------------------->
+    <script>
+        var navLinks = document.getElementById("nav-links");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
 </body>
 </html>
