@@ -104,7 +104,7 @@ nav .fa {
   }
   .nav-links {
     position: fixed;
-    background: #f44336;
+    background: #ffcc00;
     height: 100vh;
     width: 200px;
     top: 0;
@@ -124,6 +124,9 @@ nav .fa {
   .nav-links ul {
     padding: 30px;
   }
+  .nav-links ul li::after {
+    background: #1d1d4b;
+  }
 }
 
 /*------------------Features-------------------*/
@@ -141,7 +144,6 @@ nav .fa {
   height: auto;
   background: #1d1d4b;
   border-radius: 20px;
-  
 }
 
 .wrapper {
@@ -161,9 +163,12 @@ nav .fa {
   flex: 1;
   margin: 10px 20px;
   padding: 5px;
-  &:first-child { margin-left: 0; }
-  &:last-child { margin-right: 0; }
-  
+  &:first-child {
+    margin-left: 0;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .child-div:hover {
@@ -177,13 +182,11 @@ nav .fa {
   color: #ffffff;
 }
 
-
 .wrapper p {
   text-align: center;
   font-size: 12;
   color: #ffffff;
 }
-
 
 @media screen and (max-width: 980px) {
   .columns .column {
@@ -241,7 +244,7 @@ p {
 h3 {
   color: antiquewhite;
   text-align: center;
-  font-weight: 600; 
+  font-weight: 600;
   margin: 10px 0;
 }
 .services .column:hover {
@@ -284,7 +287,8 @@ h3 {
   transition: 0.5s;
 }
 .layer:hover {
-  background: rgba(226, 0, 0, 0.7);
+  background: #ffcc00;
+  opacity: 0.7;
 }
 .layer h3 {
   width: 100%;
@@ -365,10 +369,10 @@ h3 {
   text-align: left;
 }
 .testimonials-col h4 {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .testimonials-col .fa {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 @media (max-width: 700px) {
   .testimonials-col img {
@@ -587,14 +591,14 @@ h3 {
   justify-content: center;
   align-items: center;
 }
-.icons a{
+.icons a {
   height: 36px;
   width: 36px;
   align-items: center;
   margin: 24px;
   justify-content: center;
 }
-.icons a img{
+.icons a img {
   max-width: 100%;
   height: auto;
   filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
